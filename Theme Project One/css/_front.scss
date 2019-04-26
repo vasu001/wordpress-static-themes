@@ -1,0 +1,280 @@
+header {
+    background-color: $front-middle-header-bgcolor;
+    
+    #front-top-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        background-color: $front-top-header-bg-color;
+        
+        #social-icons {
+            flex: 1;
+            margin-top: 0.8rem;
+
+            a {
+                color: $front-top-header-color;
+                text-decoration: none;
+                padding: 0.4rem 1rem;
+                transition: color 0.4s;
+                
+                &:first-child {
+                    margin-left: 1rem;
+                }
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+
+        #contacts-info {
+            flex: 1;
+            font-size: 1.4rem;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: $front-top-header-color;
+                padding: 0.4rem 1rem;
+                transition: color 0.4s;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+
+        #search-form {
+            text-align: right;
+            margin-right: 1rem;
+            flex: 1;
+
+            .form-group {
+                .form-control {
+                    width: 20rem;
+                    border: 1 solid #444;
+                    padding: 0.4em 1rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    #front-middle-header {
+        display: flex;
+        justify-content: center;
+        background-color: $front-middle-header-bgcolor;
+
+        nav {
+            padding: 1rem;
+            font-size: 1.4rem;
+            flex: 1;
+
+            .nav-ul {
+                display: flex;
+                justify-content: space-around;
+                .nav-list {
+                    list-style: none;
+                    margin: 1.8rem 1rem;
+
+                    .nav-link {
+                        color: $front-middle-header-color;
+                        text-decoration: none;
+                        border-bottom: 0.2rem solid transparent;
+                        padding-bottom: 2.6rem;
+                        transition: all 0.6s linear;
+
+                        &:hover {
+                            border-bottom: 0.2rem solid $front-middle-header-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        #logo {
+            text-align: center;
+            .logo-img {
+                width: 8rem;
+            }
+        }
+    }
+
+    #front-bottom-header {
+        display: flex;
+        justify-content: center;
+        padding: 8rem 0;
+        text-align: center;
+        background: linear-gradient($linear-gradient-color,$linear-gradient-color), url("https://source.unsplash.com/daily") center center/cover no-repeat;
+
+        div {
+            color: $front-middle-header-color;
+            h1 {
+                font-size: 4rem;
+                font-weight: 300;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    #front-header-small {
+        display: none;
+    }
+    
+    #front-header-nav-small {
+        display: none;
+    }
+}
+
+@media all and (max-width: 500px) {
+    header {
+        #front-top-header {
+            display: none;
+        }
+
+        #front-middle-header {
+            display: none;
+        }
+
+        #front-header-nav-small {
+            background-color: $front-middle-header-bgcolor;
+            .nav-ul {
+                display: block; 
+                margin-left: 1rem;
+                padding: 1rem;
+
+
+                .nav-list {
+                    list-style: none;
+                    margin-bottom: 0.5rem;
+
+                    .nav-link {
+                        color: $front-middle-header-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        #front-header-small {
+            display: block;
+            background-color: $front-middle-header-bgcolor;
+            nav {
+                display: flex;
+
+                a {
+                    flex: 1;
+                    margin-left: 1rem;
+                    padding: 1rem;
+                    .logo-img {
+                        width: 4rem;
+                    }
+                }
+
+                .btn-nav {
+                    background: $front-middle-header-bgcolor;
+                    border: 0;
+                    color: $front-middle-header-color;
+                    cursor: pointer;
+                    margin-right: 1rem;
+                }
+
+            }
+        }
+
+        #front-bottom-header {
+            padding: 4rem 0;
+            div {
+                color: $front-middle-header-color;
+                h1 {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 1191px) {
+    header {
+        #front-top-header {
+            display: none;
+        }
+
+        #front-middle-header {
+            display: none;
+        }
+
+
+        #front-header-nav-small {
+            background-color: $front-middle-header-bgcolor;
+            .nav-ul {
+                display: block; 
+                margin-left: 1rem;
+                padding: 1rem;
+
+
+                .nav-list {
+                    list-style: none;
+                    margin-bottom: 0.5rem;
+
+                    .nav-link {
+                        color: $front-middle-header-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        #front-header-small {
+            display: block;
+            background-color: $front-middle-header-bgcolor;
+            nav {
+                display: flex;
+
+                a {
+                    flex: 1;
+                    margin-left: 1rem;
+                    padding: 1rem;
+                    .logo-img {
+                        width: 4rem;
+                    }
+                }
+
+                .btn-nav {
+                    background: $front-middle-header-bgcolor;
+                    border: 0;
+                    color: $front-middle-header-color;
+                    cursor: pointer;
+                    margin-right: 1rem;
+                }
+
+            }
+        }
+
+        #front-bottom-header {
+            padding: 6rem 0;
+            div {
+            color: $front-middle-header-color;
+            h1 {
+                font-size: 2rem;
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+        }
+    }
+}

@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  color: #444;
+  background: #fff;
+  font-size: 62.5%;
+}
+
+header {
+  background-color: #283655;
+}
+
+header #front-top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+  background-color: #1e1f26;
+}
+
+header #front-top-header #social-icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 0.8rem;
+}
+
+header #front-top-header #social-icons a {
+  color: #4d648d;
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+header #front-top-header #social-icons a:first-child {
+  margin-left: 1rem;
+}
+
+header #front-top-header #social-icons a:hover {
+  color: #fff;
+}
+
+header #front-top-header #contacts-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+header #front-top-header #contacts-info a {
+  text-decoration: none;
+  color: #4d648d;
+  padding: 0.4rem 1rem;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+header #front-top-header #contacts-info a:hover {
+  color: #fff;
+}
+
+header #front-top-header #search-form {
+  text-align: right;
+  margin-right: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header #front-top-header #search-form .form-group .form-control {
+  width: 20rem;
+  border: 1 solid #444;
+  padding: 0.4em 1rem;
+  font-size: 1.2rem;
+}
+
+header #front-middle-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #283655;
+}
+
+header #front-middle-header nav {
+  padding: 1rem;
+  font-size: 1.4rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header #front-middle-header nav .nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header #front-middle-header nav .nav-ul .nav-list {
+  list-style: none;
+  margin: 1.8rem 1rem;
+}
+
+header #front-middle-header nav .nav-ul .nav-list .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 0.2rem solid transparent;
+  padding-bottom: 2.6rem;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+header #front-middle-header nav .nav-ul .nav-list .nav-link:hover {
+  border-bottom: 0.2rem solid #ffffff;
+}
+
+header #front-middle-header #logo {
+  text-align: center;
+}
+
+header #front-middle-header #logo .logo-img {
+  width: 8rem;
+}
+
+header #front-bottom-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8rem 0;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://source.unsplash.com/daily") center center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://source.unsplash.com/daily") center center/cover no-repeat;
+}
+
+header #front-bottom-header div {
+  color: #ffffff;
+}
+
+header #front-bottom-header div h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+header #front-bottom-header div p {
+  font-size: 1.6rem;
+}
+
+header #front-header-small {
+  display: none;
+}
+
+header #front-header-nav-small {
+  display: none;
+}
+
+@media all and (max-width: 500px) {
+  header #front-top-header {
+    display: none;
+  }
+  header #front-middle-header {
+    display: none;
+  }
+  header #front-header-nav-small {
+    background-color: #283655;
+  }
+  header #front-header-nav-small .nav-ul {
+    display: block;
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+  header #front-header-nav-small .nav-ul .nav-list {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  header #front-header-nav-small .nav-ul .nav-list .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  header #front-header-small {
+    display: block;
+    background-color: #283655;
+  }
+  header #front-header-small nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header #front-header-small nav a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+  header #front-header-small nav a .logo-img {
+    width: 4rem;
+  }
+  header #front-header-small nav .btn-nav {
+    background: #283655;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  header #front-bottom-header {
+    padding: 4rem 0;
+  }
+  header #front-bottom-header div {
+    color: #ffffff;
+  }
+  header #front-bottom-header div h1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  header #front-bottom-header div p {
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 1191px) {
+  header #front-top-header {
+    display: none;
+  }
+  header #front-middle-header {
+    display: none;
+  }
+  header #front-header-nav-small {
+    background-color: #283655;
+  }
+  header #front-header-nav-small .nav-ul {
+    display: block;
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+  header #front-header-nav-small .nav-ul .nav-list {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  header #front-header-nav-small .nav-ul .nav-list .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  header #front-header-small {
+    display: block;
+    background-color: #283655;
+  }
+  header #front-header-small nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header #front-header-small nav a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+  header #front-header-small nav a .logo-img {
+    width: 4rem;
+  }
+  header #front-header-small nav .btn-nav {
+    background: #283655;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  header #front-bottom-header {
+    padding: 6rem 0;
+  }
+  header #front-bottom-header div {
+    color: #ffffff;
+  }
+  header #front-bottom-header div h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  header #front-bottom-header div p {
+    font-size: 1.4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
