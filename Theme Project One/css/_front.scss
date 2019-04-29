@@ -148,6 +148,7 @@
 	}
 }
 
+
 #front-articles {
 	display: flex;
 	justify-content: space-around;
@@ -461,9 +462,11 @@
 
 	#front-footer {
 		font-size: 1.6rem;
+		display: block;
 
 		.container {
 			.social-icons {
+				text-align: center;
 				a {
 					font-size: 1.2rem;
 				}
@@ -618,7 +621,7 @@
 	}
 
 	#front-footer {
-		font-size: 2rem;
+		font-size: 1.8rem;
 		display: block;
 
 		.container {
@@ -650,12 +653,12 @@
 @media all and (min-width: 1192px) and (max-width: 1600px) {
 	#front-header {
 		#arrow-down {
-			border: 1px solid red;
-			bottom: 2rem;
+			// border: 1px solid red;
+			bottom: 4rem;
 		}
 
 		#front-top-header {
-			border: 1px solid red;
+			// border: 1px solid red;
 			#contacts-info {
 				font-size: 1.2rem;
 			}
@@ -663,24 +666,57 @@
 
 		#front-middle-header {
 			nav {
-				font-size: 1.7rem;
+				font-size: 1.5rem;
 			}
 		}
 
 		#front-bottom-header {
 			div {
 				h1 {
-					font-size: 8rem;
+					font-size: 7rem;
 				}
 
 				p {
-					font-size: 3rem;
+					font-size: 2.4rem;
 				}
 			}
 		}
 	}
-
+#front-articles {
+	.article {
+		.inner-article {
+			h2 {
+				font-size: 3rem;
+			}
+			nav {
+				.nav-ul {
+					.nav-list {
+						.nav-list-div-one {
+							.nav-list-div-one-one {
+								a {
+									h3 {
+										font-size: 2rem;
+									}
+								}
+							}
+							.nav-list-div-one-two {
+								.nav-link {
+									h3 {
+										font-size: 2rem;
+									}
+								}
+									p {
+										font-size: 1.4rem;
+									}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 	#front-footer {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
 }
