@@ -1,8 +1,10 @@
-$(document).ready(function () {
-    const navIcon = $('#nav-pull-icon');
+$(function () {
 
-    navIcon.click(() => {
-        const displayFrontHeaderSmall = $('#front-header-nav-small');
-        displayFrontHeaderSmall.toggle(300);
-    });
+	const navIcon = $('#nav-pull-icon');
+
+	navIcon.click(() => {
+		const displayFrontHeaderSmall = $('#front-header-nav-small');
+		displayFrontHeaderSmall.toggle(300);
+	});
+
 });
